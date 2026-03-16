@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CNPJ Profissional</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Consulta de CNPJ</h2>
+    <div class="search-box">
+        <input type="text" id="cnpjInput" placeholder="Digite apenas os 14 números" maxlength="14">
+        <button onclick="consultarCNPJ()">Buscar</button>
+    </div>
+
+    <div id="resultado" class="resultado">
+        </div>
+    
+    <button id="btnPdf" onclick="gerarPDF()">Gerar Relatório PDF</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

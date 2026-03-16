@@ -1,0 +1,58 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 550px;
+}
+
+h2 { color: #2c3e50; text-align: center; margin-top: 0; }
+
+.search-box { display: flex; gap: 10px; margin-bottom: 20px; }
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus { border-color: #3498db; }
+
+button {
+    padding: 12px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover { background-color: #219150; }
+
+#btnPdf {
+    background-color: #e74c3c;
+    width: 100%;
+    margin-top: 20px;
+    display: none; /* Escondido até ter resultado */
+}
+
+.resultado {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.item { margin-bottom: 10px; font-size: 14px; line-height: 1.5; }
+.label { font-weight: bold; color: #7f8c8d; display: block; text-transform: uppercase; font-size: 11px; }
